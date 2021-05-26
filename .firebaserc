@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ingresos-egresos-162f6": {
+      "hosting": {
+        "ingresoEgresoApp": [
+          "ingresos-egresos-162f6"
+        ]
+      }
+    }
+  }
+}
