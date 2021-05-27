@@ -2,7 +2,6 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 
 // Store ngrx
 import { Store } from '@ngrx/store';
-import { AppState } from '../../app.reducer';
 
 // models
 import { IngresoEgreso } from 'src/app/models/ingreso-egreso.model';
@@ -11,6 +10,7 @@ import { Subscription } from 'rxjs';
 // charts
 import { ChartType } from 'chart.js';
 import { MultiDataSet, Label } from 'ng2-charts';
+import { AppStateWithIngreso } from '../ingreso-egreso.reducer';
 
 @Component({
   selector: 'app-estadistica',
@@ -36,7 +36,7 @@ export class EstadisticaComponent implements OnInit, OnDestroy {
   ingresos: number = 0;
 
   constructor(
-    private store: Store<AppState>
+    private store: Store<AppStateWithIngreso>
   ) { }
 
 
